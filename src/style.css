@@ -1,0 +1,147 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Dancing+Script:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Cinzel+Decorative:wght@700&display=swap');
+
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-family: 'Cherry Bomb One', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+body{
+    padding: 3rem;
+}
+
+.container{
+    background: rgb(15,42,211);
+    background: linear-gradient(287deg, rgba(15,42,211,0.7624183462447479) 2%, rgba(203,204,32,1) 20%, rgba(232,9,9,0.8996732482055322) 100%); 
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    max-width: 500px;
+    padding: 1rem;
+    border-radius: 2rem
+}
+
+.formUser{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+.control_formula{
+    display: flex;
+    gap: 1rem;
+    max-width: 400px;
+
+}
+.control_formula label{
+    width: 40%;
+    color: black;
+
+}
+.control_formula input{
+    width: 60%;
+    padding: 0.3rem; 
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+}
+
+.control_formula:focus-within{
+    color: blue;
+    background: rgb(15,42,211);
+    background: radial-gradient(circle, rgba(15,42,211,0.7624183462447479) 78%, rgba(137,227,241,1) 91%); 
+    border: 0.3rem inset blue;
+    border-radius: 1rem;
+    padding: 2px;
+}
+
+.users{
+    display: grid;
+    gap:1rem;
+    letter-spacing: 2px;
+    padding: 5px;
+    max-width: 500px;
+    
+
+}
+.user{
+    background: rgb(15,42,211);
+    background: linear-gradient(287deg, rgba(15,42,211,0.7624183462447479) 2%, rgba(203,204,32,1) 20%, rgba(232,9,9,0.8996732482055322) 100%); ;
+    border-radius: 5px;
+    gap: 0.5rem ;
+    padding:0.5rem;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-family: 'Cinzel Decorative', cursive;
+
+    
+}
+.contenedor{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: black;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden; 
+    transition: opacity 0.5s, visibility 0.5s ;
+    font-family: 'Cherry Bomb One', cursive;
+}
+
+.contenedor_icon{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal{
+    background-color: transparent;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.icono{
+    font-weight: bold;
+    right: 0.5rem;
+    position: absolute;
+    top: 1px;
+    cursor: pointer;
+}
+
+.btn{
+    background-color: white;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 5px;
+    border: 1px solid gray;
+    cursor: pointer;
+    font-family: 'Cherry Bomb One', cursive;
+    text-transform: uppercase;
+    
+}
+
+.btn:hover {
+    background: rgb(137,227,241);
+    background: radial-gradient(circle, rgba(137,227,241,1) 11%, rgba(15,42,211,0.7624183462447479) 78%);
+    color: black;
+    border: 3px solid blue;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+
+  <body>
+    
+    <div class="container">
+      <form id="formUser" class="formUser">
+
+        <div class="control_formula">
+          <label for="user">UserName</label>
+          <input type="text" placeholder="Ej: name" id="user" name="user" />
+        </div>
+
+        <div class="control_formula">
+            <label for="email">Email</label>
+            <input
+              type="email" placeholder="Ej: email@..." id="email"
+              name="email" />
+        </div>  
+
+        <div class="control_formula">
+          <label for="pass1">Password I</label>
+          <input type="password" placeholder="" id="pass1" name="pass1" />
+        </div>
+
+        <div class="control_formula">
+          <label for="pass2">Password II</label>
+          <input type="password" placeholder="" id="pass2" name="pass2" />
+        </div>
+
+        <div>
+          <input class="btn" type="submit" value="Confirm" />
+        </div>
+      </form>
+
+      <div class="users"></div>
+    </div>
+
+    <div class="contenedor">
+      <div class="modal">
+        <div class="icono">x</div>
+        <h2 id="textoALerta"></h2>
+      </div>
+    </div>
+
+    <script src="./src/mani.js"></script>
+  </body>
+</html>
